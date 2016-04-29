@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.buggy.weatherviewer.MainActivity">
+
+    <fragment
+        android:id="@+id/weather_shower_fragment"
+        tools:layout="@layout/weather_shower_fragment"
+        android:name="ru.buggy.weatherviewer.WeatherShowerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </fragment>
+
+    <fragment
+        android:id="@+id/city_shower_fragment"
+        tools:layout="@layout/city_shower_fragment"
+        android:name="ru.buggy.weatherviewer.CityShowerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </fragment>
+
+</LinearLayout>
